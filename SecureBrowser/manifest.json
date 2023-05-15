@@ -1,0 +1,23 @@
+{
+
+  "manifest_version": 2,
+  "name": "SecureBrowser",
+  "version": "1.0",
+
+  "applications": {
+    "gecko": {
+      "id": "SecureBrowser@mozilla.org"
+    }
+  },
+
+  "permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+
+  "browser_action": {
+    "default_icon": "button/beasts.png",
+    "default_title": "SecureBrowser",
+    "default_popup": "popup/popup.html"
+  }
+}
