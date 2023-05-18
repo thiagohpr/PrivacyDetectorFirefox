@@ -4,7 +4,7 @@ html, body {
     margin: 0;
   }
   
-  .button {
+  /* .button {
     height: 30%;
     width: 90%;
     margin: 3% auto;
@@ -17,4 +17,39 @@ html, body {
   
   .button:hover {
     background-color: #CFF2F2;
-  }
+  } */
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab button {
+  background-color: #ccc;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab button:hover {
+  background-color: #555;
+}
+
+.tabcontent {
+  display: none;
+  padding: 10px;
+}
